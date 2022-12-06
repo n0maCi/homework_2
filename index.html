@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ОП.04 - ДЗ №2</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>ОП.04 - ДЗ №2</h1>
+  <p>
+    Это файл домашнего задания №2, которое выполнил студент <strong id="student">ФИО</strong> в рамках изучения дисциплины ОП.04 - Основы алгоритмизации и программирования.
+  </p>
+  <table>
+    <tr>
+      <td></td>
+      <td>ПН</td>
+      <td>ВТ</td>
+      <td>СР</td>
+      <td>ЧТ</td>
+      <td>ПТ</td>
+      <td>СБ</td>
+      <td>ВС</td>
+    </tr>
+    <tr>
+      <td>Первый семестр</td>
+      <td><input class="table" value="4" id="mon1"></td>
+      <td><input class="table" value="1" id="tue1"></td>
+      <td><input class="table" value="2" id="wed1"></td>
+      <td><input class="table" value="5" id="thu1"></td>
+      <td><input class="table" value="2" id="fri1"></td>
+      <td><input class="table" value="2" id="sat1"></td>
+      <td><input class="table" value="0" id="sun1"></td>
+    </tr>
+    <tr>
+      <td>Экзамен</td>
+      <td><input class="table" value="0" id="mon2"></td>
+      <td><input class="table" value="2" id="tue2"></td>
+      <td><input class="table" value="0" id="wed2"></td>
+      <td><input class="table" value="2" id="thu2"></td>
+      <td><input class="table" value="0" id="fri2"></td>
+      <td><input class="table" value="0" id="sat2"></td>
+      <td><input class="table" value="0" id="sun2"></td>
+    </tr>
+    <tr>
+      <td>Второй семестр</td>
+      <td><input class="table" value="1" id="mon3"></td>
+      <td><input class="table" value="4" id="tue3"></td>
+      <td><input class="table" value="4" id="wed3"></td>
+      <td><input class="table" value="2" id="thu3"></td>
+      <td><input class="table" value="5" id="fri3"></td>
+      <td><input class="table" value="0" id="sat3"></td>
+      <td><input class="table" value="0" id="sun3"></td>
+    </tr>
+    <tr>
+      <td>Экзамен</td>
+      <td><input class="table" value="2" id="mon4"></td>
+      <td><input class="table" value="0" id="tue4"></td>
+      <td><input class="table" value="2" id="wed4"></td>
+      <td><input class="table" value="0" id="thu4"></td>
+      <td><input class="table" value="2" id="fri4"></td>
+      <td><input class="table" value="0" id="sat4"></td>
+      <td><input class="table" value="0" id="sun4"></td>
+    </tr>
+  </table>
+  <p class="quest">Стоимость приставки:<input class="questinput" id="priceOfConsole"></p>
+  <p class="quest">Стоимость проезда:<input class="questinput" id="priceOfTravel"></p>
+  <p class="quest">Сумма денег, которую дает мама на проезд:<input class="questinput" id="sumOfMoneyForTravel"></p>
+  <p class="quest">Сумма денег, которую дает мама на обеды:<input class="questinput" id="sumOfMoneyForDinner"></p>
+  <button id="submit">Отправить</button>
+  <p class="result">Результат:<strong id="result"></strong></p>
+  <script src="script.js"></script>
+</body>
+</html>
