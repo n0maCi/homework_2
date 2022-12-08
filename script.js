@@ -60,7 +60,7 @@ function getResult(priceOfConsole, priceOfTravel, sumOfMoneyForTravel, sumOfMone
                             sumOfProfitForTravel = sumOfProfitForTravel + countForTravel;
                         };
                         if (countForAccumulation * sumOfMoneyForDinner + sumOfProfitForTravel >= priceOfConsole) {
-                            return `Накопить получится за ${countForAccumulation + countDays} дней с начала учебного года.`;
+                            return `На приставку накопить удалось на ${countForAccumulation + countDays} день. Это ${Math.floor((countForAccumulation + countDays) / 7)}-ая неделя 1-го семестра.`;
                         };     
                     };
                 };
@@ -75,7 +75,7 @@ function getResult(priceOfConsole, priceOfTravel, sumOfMoneyForTravel, sumOfMone
                             sumOfProfitForTravel = sumOfProfitForTravel + countForTravel;
                         };   
                         if (countForAccumulation * sumOfMoneyForDinner + sumOfProfitForTravel >= priceOfConsole) {
-                            return `Накопить получится за ${countForAccumulation + countDays} дней с начала учебного года.`;
+                            return `На приставку накопить удалось на ${countForAccumulation + countDays} день. Это ${Math.floor((countForAccumulation + countDays) / 7)}-ая неделя 1-го семестра.`;
                         };    
                     };               
                     countDays = countDays + countOfWeeksHolidays * 7;
@@ -91,7 +91,7 @@ function getResult(priceOfConsole, priceOfTravel, sumOfMoneyForTravel, sumOfMone
                             sumOfProfitForTravel = sumOfProfitForTravel + countForTravel;
                         };
                         if (countForAccumulation * sumOfMoneyForDinner + sumOfProfitForTravel >= priceOfConsole) {
-                            return `Накопить получится за ${countForAccumulation + countDays} дней с начала учебного года.`;
+                            return `На приставку накопить удалось на ${countForAccumulation + countDays} день. Это ${Math.floor((countForAccumulation + countDays - (countOfWeeksForFirstsemester + 1 + countOfWeeksHolidays) * 7) / 7)}-ая неделя 2-го семестра.`;
                         };     
                     };
                 };
@@ -106,13 +106,13 @@ function getResult(priceOfConsole, priceOfTravel, sumOfMoneyForTravel, sumOfMone
                             sumOfProfitForTravel = sumOfProfitForTravel + countForTravel;
                         };
                         if (countForAccumulation * sumOfMoneyForDinner + sumOfProfitForTravel >= priceOfConsole) {
-                            return `Накопить получится за ${countForAccumulation + countDays} дней с начала учебного года.`;
+                            return `На приставку накопить удалось на ${countForAccumulation + countDays} день. Это ${Math.floor((countForAccumulation + countDays - (countOfWeeksForFirstsemester + 1 + countOfWeeksHolidays) * 7) / 7)}-ая неделя 2-го семестра.`;
                         };     
                     };
                 };
             console.log(countForAccumulation);
             console.log(countDays);
-            console.log(countDaysOfStudies);
+            console.log(sumOfProfitForTravel);
         };
     };
     if (countForAccumulation + countDays == countDaysOfStudies) {
